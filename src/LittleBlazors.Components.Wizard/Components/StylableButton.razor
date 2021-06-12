@@ -1,8 +1,9 @@
 ﻿@using LittleBlazors.Components.Core;
+@using MatBlazor;
 
 @if (Style.Visible)
 {
-    <button class="@Style.CssClassName" @onclick="OnButtonClick">@Style.Title</button>
+    <MatButton Raised="true" @onclick="OnButtonClick">@Style.Title</MatButton>
 }
 
 @code {
